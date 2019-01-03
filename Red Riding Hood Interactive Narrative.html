@@ -25,7 +25,9 @@
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -60,7 +62,7 @@
 [[Return Home]] 
 
 (link-goto: &quot;Backpack&quot;, $RRHInventory)
-</tw-passagedata><tw-passagedata pid="3" name="cake and wine" tags="" position="463,396" size="100,100">&lt;img src=&quot;https://static.wixstatic.com/media/450826_6743c99e11de48a59c26f537d76b9353~mv2.png/v1/fill/w_176,h_179,al_c,lg_1,q_80/Mother%20character%20pic.webp&quot; width=&quot;128&quot; height=&quot;128&quot;&gt;&lt;img src=&quot;https://static.wixstatic.com/media/450826_78ff10ee1bb84e86adde5f5755e46a34~mv2.png/v1/fill/w_176,h_179,al_c,lg_1,q_80/RRH%20character%20pic.webp&quot; width=&quot;128&quot; height=&quot;128&quot;&gt;
+</tw-passagedata><tw-passagedata pid="3" name="cake and wine" tags="" position="464.6666666666667,397.6666666666667" size="100,100">&lt;img src=&quot;https://static.wixstatic.com/media/450826_6743c99e11de48a59c26f537d76b9353~mv2.png/v1/fill/w_176,h_179,al_c,lg_1,q_80/Mother%20character%20pic.webp&quot; width=&quot;128&quot; height=&quot;128&quot;&gt;&lt;img src=&quot;https://static.wixstatic.com/media/450826_78ff10ee1bb84e86adde5f5755e46a34~mv2.png/v1/fill/w_176,h_179,al_c,lg_1,q_80/RRH%20character%20pic.webp&quot; width=&quot;128&quot; height=&quot;128&quot;&gt;
 &quot;Don&#39;t worry, Mother. I won&#39;t let you down&quot;. With great gusto, you sprint towards the out of the door and and into the wide world. As you run you hear your mother call &quot;Wait... before too...walk...run...path...fall and break...morning...don&#39;t...nosy&quot; and you wonder what she could possibly mean, the world is a wonderful place and surely no harm could befall Me! 
 (set: $HasListened to 0)
 
@@ -109,10 +111,15 @@ Grandmother image code:
 https://static.wixstatic.com/media/450826_57f1d83d702a4c988ec78de2a8e9c557~mv2.png/v1/fill/w_175,h_179,al_c,lg_1,q_80/Grandmother%20character%20pic.webp
 
 Huntsman image code:
-https://static.wixstatic.com/media/450826_a93ab06929df4d8d8113bec2c79a7879~mv2.png/v1/fill/w_175,h_179,al_c,lg_1,q_80/Huntsman%20character%20pic.webp</tw-passagedata><tw-passagedata pid="9" name="BackPack" tags="menu" position="244,9" size="100,100">(if: $HasWine is 1)[(link: &quot;Wine&quot;)[Wine: A bottle of Shy Pig red wine for Grandma.(link:&quot;\n Drink Wine&quot;)[You feel a slight buzz from the wine. It tastes very fruity.(set: $HasWine to 0)]]]
+https://static.wixstatic.com/media/450826_a93ab06929df4d8d8113bec2c79a7879~mv2.png/v1/fill/w_175,h_179,al_c,lg_1,q_80/Huntsman%20character%20pic.webp</tw-passagedata><tw-passagedata pid="9" name="BackPack" tags="menu" position="244,5.666666666666666" size="100,100">(if: $HasWine is 1)[(link: &quot;Wine&quot;)[Wine: A bottle of Shy Pig red wine for Grandma.(link:&quot;\n Drink Wine&quot;)[You feel a slight buzz from the wine. It tastes very fruity.(set: $HasWine to 0)]]]
 
 (if: $HasCake is 1)[(link: &quot;Cake&quot;)[Cake: A red velvet cake for Grandma. (link:&quot;\n Eat Cake&quot;)[I eat the cake whole. It tastes red, just like me!(set: $HasCake to 0)]]]
 
+(if: $HasRedFlower is 1)[(link: &quot;Red Flower&quot;)[Red Flower: A red flower that I picked for my Grandmother.]](if: $HasRedFlower is &gt;1)[(link: &quot;Red Flowers&quot;)[Red Flowers: A bunch of $HasRedFlower red flowers that I picked for my Grandmother.]]
+
+(if: $HasBlueFlower is 1)[(link: &quot;Blue Flower&quot;)[Blue Flower: A blue flower that I picked for my Grandmother.]](if: $HasBlueFlower is &gt;1)[(link: &quot;Blue Flowers&quot;)[Blue Flowers: A bunch of $HasBlueFlower blue flowers that I picked for my Grandmother.]]
+
+(if: $HasPurpleFlower is 1)[(link: &quot;Purple Flower&quot;)[Purple Flower: A purple flower that I picked for my Grandmother.]](if: $HasPurpleFlower is &gt;1)[(link: &quot;Purple Flowers&quot;)[Purple Flowers: A bunch of $HasPurpleFlower blue flowers that I picked for my Grandmother.]]
 
 (link-goto: &quot;Close Backpack&quot;, $lastPassage)</tw-passagedata><tw-passagedata pid="10" name="Last Passage Tracking" tags="header" position="132,9" size="100,100">(if: not ((passage:)&#39;s tags contains &quot;menu&quot;))[(set: $lastPassage to (passage:)&#39;s name)]</tw-passagedata><tw-passagedata pid="11" name="StartUp" tags="startup" position="2,9" size="100,100">(set: $lastPassage to &quot;&quot;)
 (set: $RRHInventory to &quot;BackPack&quot;)</tw-passagedata><tw-passagedata pid="12" name="Return Home" tags="" position="422,729" size="100,100">&lt;img src=&quot;https://static.wixstatic.com/media/450826_6743c99e11de48a59c26f537d76b9353~mv2.png/v1/fill/w_176,h_179,al_c,lg_1,q_80/Mother%20character%20pic.webp&quot; width=&quot;128&quot; height=&quot;128&quot;&gt;&lt;img src=&quot;https://static.wixstatic.com/media/450826_78ff10ee1bb84e86adde5f5755e46a34~mv2.png/v1/fill/w_176,h_179,al_c,lg_1,q_80/RRH%20character%20pic.webp&quot; width=&quot;128&quot; height=&quot;128&quot;&gt;
@@ -253,21 +260,30 @@ I got to the crossroads. If I carried on walking west, I&#39;d get to my Grandma
 (linkgo-to: &quot;I&#39;m sorry, you startled me, thats all.&quot;, &quot;How are you today?&quot;)
 [[You shouldnt be sneaking up on people like that!]]</tw-passagedata><tw-passagedata pid="45" name="I&#39;m going to visit my Grandmother. She&#39;s not feeling well" tags="" position="2607,199" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]&quot;I&#39;m sorry to hear, my dear. Where abouts does your Grandmother live?&quot; The Wolf asks.
 
-[[&quot;She lives at the end of the west road&quot;]]
-[[&quot;She lives at the end of the east road&quot;]]
-[[&quot;She lives back down the south road&quot;]]</tw-passagedata><tw-passagedata pid="46" name="&quot;She lives at the end of the west road&quot;" tags="" position="2810,54" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]&quot;I see&quot; replies the Wolf. &quot;Thats quite a walk for someone on their own. Would you like some companionship on the road?&quot;
+&quot;[[She lives at the end of the west road]]&quot;
+&quot;[[She lives at the end of the east road]]&quot;
+&quot;[[She lives back down the south road]]&quot;</tw-passagedata><tw-passagedata pid="46" name="She lives at the end of the west road" tags="" position="2810,54" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]&quot;I see&quot; replies the Wolf. &quot;Thats quite a walk for someone on their own. Would you like some companionship on the road?&quot;
 
 [[&quot;Yes please! I love making new friends&quot;]]
 [[&quot;No thank you, I&#39;m sure you&#39;re a very busy woodland creature and I dont want to get in your way&quot;]]
 [[&quot;Erm, no? my Mother said I shouldnt hang around with strangers and you are definetly a stranger to me...&quot;]]
 
-(set: $WKnownDirection to &quot;West&quot;)</tw-passagedata><tw-passagedata pid="47" name="&quot;She lives at the end of the east road&quot;" tags="" position="2810,164" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]
+(set: $WKnownDirection to &quot;West&quot;)</tw-passagedata><tw-passagedata pid="47" name="She lives at the end of the east road" tags="" position="2810,164" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]&quot;I see&quot; replies the Wolf. &quot;Thats quite a walk for someone on their own. Would you like some companionship on the road?&quot;
+
+[[&quot;Yes please! I love making new friends&quot;]]
+[[&quot;No thank you, I&#39;m sure you&#39;re a very busy woodland creature and I dont want to get in your way&quot;]]
+[[&quot;Erm, no? my Mother said I shouldnt hang around with strangers and you are definetly a stranger to me...&quot;]]
 
 
 
 
+(set: $WKnownDirection to &quot;East&quot;)</tw-passagedata><tw-passagedata pid="48" name="She lives back down the south road" tags="" position="2811,277" size="100,100">(set: $WolfDisposition to $WolfDisposition  + 1)(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)](The Wolf&#39;s eyes narrowed, as if he could sense your lie. &quot;Is that so?&quot; he asked.&quot;You were facing away from the south road when you turned to greet me.&quot;
 
-(set: $WKnownDirection to &quot;East&quot;)</tw-passagedata><tw-passagedata pid="48" name="&quot;She lives back down the south road&quot;" tags="" position="2811,277" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]</tw-passagedata><tw-passagedata pid="49" name="&quot;Yes please! I love making new friends&quot;" tags="" position="3398,105" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]&quot;Wonderful!&quot; replied the Wolf with a gleam in his eyes. &quot;Shall  we start walking (if: $WKnownDirection is &quot;West&quot;)[west?](if: $WKnownDirection is &quot;East&quot;)[east?]</tw-passagedata><tw-passagedata pid="50" name="&quot;No thank you, I&#39;m sure you&#39;re a very busy woodland creature and I dont want to get in your way&quot;" tags="" position="3301,355" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]</tw-passagedata><tw-passagedata pid="51" name="&quot;Erm, no? my Mother said I shouldnt hang around with strangers and you are definetly a stranger to me...&quot;" tags="" position="3301,490" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]</tw-passagedata><tw-passagedata pid="52" name="You shouldnt be sneaking up on people like that!" tags="" position="2304,735" size="100,100">(set: $WolfDisposition to $WolfDisposition  + 1)(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]
+&quot;[[Yep....totally going south. Southwards bound is my destination]]&quot;
+(linkgo-to: &quot;Im sorry, I lied. I&#39;m actually heading west&quot;, &quot;She lives at the end of the west road&quot;)
+(linkgo-to: &quot;Im sorry, I lied. I&#39;m actually heading east&quot;, &quot;She lives at the end of the east road&quot;)</tw-passagedata><tw-passagedata pid="49" name="&quot;Yes please! I love making new friends&quot;" tags="" position="3398,50" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]&quot;Wonderful!&quot; replied the Wolf with a gleam in his eyes.(if: $WKnownDirection is &quot;West&quot;)[&quot;Shall we start walking [[west]]?](if: $WKnownDirection is &quot;East&quot;)[&quot;Shall we start walking [[east]]?]
+
+(if: $WKnownDirection is &quot;West&quot;)[&quot;Actually, lets walk [[east]]&quot;](if: $WKnownDirection is &quot;East&quot;)[&quot;Actually, lets walk [[west]]&quot;]</tw-passagedata><tw-passagedata pid="50" name="&quot;No thank you, I&#39;m sure you&#39;re a very busy woodland creature and I dont want to get in your way&quot;" tags="" position="3402,331" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]</tw-passagedata><tw-passagedata pid="51" name="&quot;Erm, no? my Mother said I shouldnt hang around with strangers and you are definetly a stranger to me...&quot;" tags="" position="3404,508" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]</tw-passagedata><tw-passagedata pid="52" name="You shouldnt be sneaking up on people like that!" tags="" position="2304,735" size="100,100">(set: $WolfDisposition to $WolfDisposition  + 1)(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]
 The Wolf&#39;s lips curl. &quot;I am so very deeply sorry for upsetting you. It was not my intent&quot;
 
 
@@ -276,15 +292,45 @@ The Wolf&#39;s lips curl. &quot;I am so very deeply sorry for upsetting you. It 
 
 
 
-</tw-passagedata><tw-passagedata pid="53" name="Can you just go away and leave me along now? K thx" tags="" position="3297,626" size="100,100">(set: $WolfDisposition to $WolfDisposition  + 1)The Wolf sneered at me.&quot;Unfortunatly, I must depart.It was ...nice making your acquaintence&quot;. The Wolf walked back down the south path.</tw-passagedata><tw-passagedata pid="54" name="&quot;Oh... I&#39;m just.... sort of wandering around, I guess? Why do you ask?" tags="" position="2600,400" size="100,100">&quot;Oh, I&#39;m not asking for any reason in particular. My apologies, I don&#39;t talk much, so im not so terribly at small talk. And you must be wandering around for a reason? I refuse to believe that your mother would let you loose into the world at your age without good reason&quot;. The Wolf inquired further.
+</tw-passagedata><tw-passagedata pid="53" name="Can you just go away and leave me along now? K thx" tags="" position="3405,674" size="100,100">(set: $WolfDisposition to $WolfDisposition  + 1)The Wolf sneered at me.&quot;Unfortunatly, I must depart.It was ...nice making your acquaintence&quot;. The Wolf walked back down the south path.</tw-passagedata><tw-passagedata pid="54" name="&quot;Oh... I&#39;m just.... sort of wandering around, I guess? Why do you ask?" tags="" position="2600,400" size="100,100">&quot;Oh, I&#39;m not asking for any reason in particular. My apologies, I don&#39;t talk much, so im not so terribly at small talk. And you must be wandering around for a reason? I refuse to believe that your mother would let you loose into the world at your age without good reason&quot;. The Wolf inquired further.
 [[I&#39;m going to visit my Grandmother. She&#39;s not feeling well]]
 [[Nope, I&#39;m just wandering around. I like to wander!]]
 [[It&#39;s none of your business why im wandering? I am a law abiding citizen and I exercise my right to wander]]
-</tw-passagedata><tw-passagedata pid="55" name="&quot;Is that really any of your business?&quot;" tags="" position="2507,723" size="100,100">(set: $WolfDisposition to $WolfDisposition  + 1)(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]</tw-passagedata><tw-passagedata pid="56" name="Nope, I&#39;m just wandering around. I like to wander!" tags="" position="2762,432" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]
+</tw-passagedata><tw-passagedata pid="55" name="&quot;Is that really any of your business?&quot;" tags="" position="2507,723" size="100,100">(set: $WolfDisposition to $WolfDisposition  + 1)(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]</tw-passagedata><tw-passagedata pid="56" name="Nope, I&#39;m just wandering around. I like to wander!" tags="" position="2805,500" size="100,100">(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]
 The wolf tilted his head, as if he were unconvinced that I was out there purely to wander for wander&#39;s sake. He shrugged. &quot;Fair enough then, I guess&quot; he replied. &quot;Well if you&#39;re just wandering, would you like a travelling companion? These roads can get so very lonely&quot;
 [[&quot;Yes please! I love making new friends&quot;]] 
 [[&quot;No thank you, I&#39;m sure you&#39;re a very busy woodland creature and I dont want to get in your way&quot;]] 
-[[&quot;Erm, no? my Mother said I shouldnt hang around with strangers and you are definetly a stranger to me...&quot;]] </tw-passagedata><tw-passagedata pid="57" name="It&#39;s none of your business why im wandering? I am a law abiding citizen and I exercise my right to wander" tags="" position="2700,598" size="100,100">(set: $WolfDisposition to $WolfDisposition  + 1)(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]</tw-passagedata></tw-storydata>
+[[&quot;Erm, no? my Mother said I shouldnt hang around with strangers and you are definetly a stranger to me...&quot;]] </tw-passagedata><tw-passagedata pid="57" name="It&#39;s none of your business why im wandering? I am a law abiding citizen and I exercise my right to wander" tags="" position="2711,758" size="100,100">(set: $WolfDisposition to $WolfDisposition  + 1)(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]</tw-passagedata><tw-passagedata pid="58" name="west" tags="" position="3602.666666666667,100.99999999999994" size="100,100">(if: $WKnownDirection is &quot;East&quot;)[The Wolf looked confused. &quot;Oh... okay then. Lets walk east]
+
+
+[[PLACEHOLDER FOR A WHOLE BUNCH OF SHIT&quot;]]</tw-passagedata><tw-passagedata pid="59" name="east" tags="" position="3601.3333333333335,205.99999999999994" size="100,100">(if: $WKnownDirection is &quot;West&quot;)[The Wolf looked confused. &quot;Oh... okay then. Lets walk west]
+
+[[PLACEHOLDER FOR A WHOLE BUNCH OF SHIT&quot;]] </tw-passagedata><tw-passagedata pid="60" name="Yep....totally going south. Southwards bound is my destination" tags="" position="3403,812" size="100,100">(set: $WolfDisposition to $WolfDisposition  + 1)(if: $WolfDisposition is 3)[(go-to:&quot;Can you just go away and leave me along now? K thx&quot;)]&quot;I see&quot;
+</tw-passagedata><tw-passagedata pid="61" name="PLACEHOLDER FOR A WHOLE BUNCH OF SHIT&quot;" tags="" position="3801.3333333333335,197.6666666666666" size="100,100">[[GO TO FLOWERS]]</tw-passagedata><tw-passagedata pid="62" name="GO TO FLOWERS" tags="" position="4009.666666666667,202.66666666666663" size="100,100">&quot;Oh look!&quot; exclaimed the Wolf.&quot;In that [[field]] over there.&quot;</tw-passagedata><tw-passagedata pid="63" name="field" tags="" position="4196.333333333334,185.9999999999999" size="100,100">(if: $HasRedFlower is &gt;= 1)[I returned to the field to discover that the wolf was gone. &quot;Shame&quot; I said. &quot;He must have gone to go do wolfy things&quot;.](else-if: $HasBlueFlower is &gt;=1)[I returned to the field to discover that the wolf was gone. &quot;Shame&quot; I said. &quot;He must have gone to go do wolfy things&quot;.](else-if: $HasPurpleFlower is &gt;=1)[I returned to the field to discover that the wolf was gone. &quot;Shame&quot; I said. &quot;He must have gone to go do wolfy things&quot;.](else:)[&quot;Oh look at those flowers&quot; I exclaimed. Wait here.&quot; I told the wolf. &quot;I&#39;m going to go [[pick some flowers]]]
+
+
+[[pick some flowers]]
+[[Carry on]]</tw-passagedata><tw-passagedata pid="64" name="pick some flowers" tags="" position="4198.000000000001,339.3333333333332" size="100,100">(if: $HasRedFlower + $HasBlueFlower + $HasPurpleFlower is 3)[&quot;I think I probably have enough flowers now, I should get moving&quot;](else:)[I walked into the field and studied the flowers. &quot;I dont even know which one to pick first!&quot;]
+(if: $HasRedFlower + $HasBlueFlower + $HasPurpleFlower is not 3)[Pick [[Red Flower]]](else:)[Return to the [[field]]]
+(if: $HasRedFlower + $HasBlueFlower + $HasPurpleFlower is not 3)[Pick [[Blue Flower]]]
+(if: $HasRedFlower + $HasBlueFlower + $HasPurpleFlower is not 3)[Pick  [[Purple Flower]]]
+
+Return to the [[field]]
+(link-goto: &quot;Backpack&quot;, $RRHInventory)</tw-passagedata><tw-passagedata pid="65" name="Red Flower" tags="" position="4003,500.99999999999994" size="100,100">(set: $HasRedFlower to $HasRedFlower + 1)
+
+
+[[pick some flowers]] 
+
+</tw-passagedata><tw-passagedata pid="66" name="Blue Flower" tags="" position="4201.333333333334,497.6666666666667" size="100,100">(set: $HasBlueFlower to $HasBlueFlower + 1)
+
+[[pick some flowers]] 
+
+</tw-passagedata><tw-passagedata pid="67" name="Purple Flower" tags="" position="4408.000000000001,504.33333333333326" size="100,100">(set: $HasPurpleFlower to $HasPurpleFlower + 1)
+
+[[pick some flowers]] 
+
+</tw-passagedata><tw-passagedata pid="68" name="Carry on" tags="" position="4403.000000000001,202.66666666666657" size="100,100">PLACEHOLDER BULLSHIT
+[[Grandmother&#39;s House]]</tw-passagedata><tw-passagedata pid="69" name="Grandmother&#39;s House" tags="" position="4599.666666666667,199.3333333333332" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
